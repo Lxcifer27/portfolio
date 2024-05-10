@@ -18,9 +18,9 @@
 <body>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-3 sidebar d-flex flex-column justify-content-center position-fixed">
+            <div class="col-12 col-xl-3 col-lg-1 sidebar d-flex flex-column justify-content-center">
                 <div class="d-flex flex-wrap justify-content-between align-items-center">
-                    <div class="col-6">
+                    <div class="col-6 d-xl-block d-xl-block d-lg-none">
                         <div class="logo d-flex justify-content-start gap-2 align-items-center">
                             <div class="logo-img">
                                 <img src="./assests/logo.png" alt="logo" />
@@ -28,17 +28,18 @@
                             <h6 class="logo-txt m-auto ms-0">Lxcifer27</h6>
                         </div>
                     </div>
-                    <div class="col-6">
+                    <div class="col-12 col-xl-6">
                         <div class="time">
-                            <p id="current_time" class="logo-txt m-auto text-end"></p>
+                            <p id="current_time" class="logo-txt m-xl-auto mb-2 text-end"></p>
                         </div>
                     </div>
-                    <div class="col-12 mt-4 mb-3">
-                        <div class="d-flex profile gap-4 flex-row flex-nowrap justify-content-start align-items-center">
+                    <div class="col-12 mt-xl-4 mb-3">
+                        <div
+                            class="d-lg-flex d-none profile gap-4 flex-row flex-nowrap justify-content-start align-items-center">
                             <div class="profile-pic">
                                 <img src="./assests/sidebar-profile.jpg" alt="profile-pic">
                             </div>
-                            <div class="profile-text d-flex flex-column my-auto">
+                            <div class="profile-text d-flex flex-column my-auto  d-xl-block d-none">
                                 <h5>Priyam Shukla</h5>
                                 <p>Full Stack Developer</p>
                                 <small class="mb-0">
@@ -48,7 +49,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 sidebar-nav mt-5">
+                    <div class="col-12 sidebar-nav mt-xl-5 mt-2">
                         <ul class="nav nav-pills nav-fill flex-column">
                             <li class="nav-item">
                                 <a class="nav-link rounded-0 active" aria-current="page" href="#">
@@ -88,8 +89,10 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="col-12 mt-5 d-flex gap-3 justify-content-between align-items-center sidebar-bottom">
-                        <div class="col m-auto d-flex justify-content-start gap-4 align-items-center social-links">
+                    <div
+                        class="col-12 mt-xl-5 mt-lg-2 d-lg-flex d-none flex-xl-row flex-lg-column gap-3 justify-content-between align-items-center sidebar-bottom">
+                        <div
+                            class="col m-auto d-flex flex-xl-row flex-lg-column justify-content-lg-start justify-content-center gap-4 align-items-center social-links">
                             <a href="#" class="twitter-icon">
                                 <i class="bi bi-twitter-x"></i>
                             </a>
@@ -110,23 +113,48 @@
                     </div>
                 </div>
             </div>
-            <div class="col-3 pe-5"></div>
-            <div class="col-9 ps-4">
-                <div class="section-1 d-flex p-4">
-                    <div class="col-4">
-                        <div class="avatar-img text-center bg-1 p-0">
-                            <img src="./assests/avatar.jpg" alt="avatar" class="w-100 m-auto">
-                        </div>
-                    </div>
-                    <div class="col-8 ps-4 pe-2">
-                        <div class="d-flex bg-1 flex-row flex-nowrap">
-                            <div class="col-4 bg p-2 me-2 text-center">
+            <div class="col-xl-3 col-1 px-lg-4"></div>
+            <div class="col-xl-9 col-lg-11 col-12 ps-lg-4 pt-lg-0 pt-4 p-0">
+                <div class="section-1 d-flex flex-wrap p-4">
+                    <div class="d-lg-none d-block col-12">
+                        <div class="d-flex mb-3 bg-1 flex-row flex-nowrap">
+                            <div class="col-5 bg p-2 me-2 text-center">
                                 <a href="#" class="available-link common-box">
                                     <span class="online-dot"></span>
                                     Available for freelance work
                                 </a>
                             </div>
-                            <div class="col-5 me-2 bg py-2 text-center text-light">
+                            <div class="col-4 me-2 bg py-2 text-center text-light">
+                                <i class="bi bi-clock"></i>
+                                <span id="current_date">Friday May, 10, 2024</span>
+                            </div>
+                            <div class="col-3 w-25 bg hover-effect">
+                                <span>
+                                    <span class="normal">
+                                        Contact Me
+                                        <i class="bi bi-arrow-up-right"></i>
+                                    </span>
+                                    <span class="hover">Contact Me
+                                        <i class="bi bi-arrow-up-right"></i>
+                                    </span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="avatar-img text-center bg-1 p-0">
+                            <img src="./assests/avatar.jpg" alt="avatar" class="w-100 m-auto">
+                        </div>
+                    </div>
+                    <div class="col-8 ps-4 pe-lg-2">
+                        <div class="d-lg-flex d-none bg-1 flex-row flex-nowrap">
+                            <div class="col-5 bg p-2 me-2 text-center">
+                                <a href="#" class="available-link common-box">
+                                    <span class="online-dot"></span>
+                                    Available for freelance work
+                                </a>
+                            </div>
+                            <div class="col-4 me-2 bg py-2 text-center text-light">
                                 <i class="bi bi-clock"></i>
                                 <span id="current_date"></span>
                             </div>
@@ -143,7 +171,7 @@
                             </div>
                         </div>
                         <div class="content d-flex flex-nowrap">
-                            <div class="col-7 bg-1 p-4">
+                            <div class="col-lg-7 col-12 bg-1 p-4">
                                 <span class="job-title">A WEB DEVELOPER</span>
                                 <h1 class="fullname mb-0">Priyam Shukla 👋🏽</h1>
                                 <p class="about-txt mt-1 mb-0">I am a Bhopal, MP - based Web and CMS developer with a
@@ -154,15 +182,15 @@
                                     <img src="./assests/sign-white.png" alt="signature" width="100">
                                 </div>
                             </div>
-                            <div class="col-5 ps-3">
-                                <div class="d-flex flex-column bg p-0">
-                                    <div class="col-12 d-flex p-2 pt-3 pb-3 small">
-                                        <div class="col-8 p-1">
+                            <div class="col-lg-5 ps-lg-3">
+                                <div class="d-lg-flex d-none flex-column bg p-0">
+                                    <div class="col-12 d-flex flex-wrap p-2 pt-3 pb-3 small">
+                                        <div class="col-xl-8 col-auto p-1">
                                             <small class="bg-1 px-3 py-2 text-light">
                                                 Bhopal, MP - 462010
                                             </small>
                                         </div>
-                                        <div class="col-4 p-1">
+                                        <div class="col-xl-4 col-auto mt-xl-0 mt-3 p-1 text-end">
                                             <small class="text-light bg p-2">
                                                 <i class="bi bi-geo-alt"></i>
                                                 India
@@ -183,7 +211,7 @@
                 </div>
                 <div class="section-2 d-flex flex-column p-4 mt-3  overflow-hidden">
                     <div class="col-12 d-flex bg p-3 pe-3 mb-1">
-                        <div class="col-1 bg hover-effect">
+                        <div class="col-xl-1 col-2 bg hover-effect">
                             <span>
                                 <span class="normal">
                                     Projects
@@ -194,7 +222,7 @@
                                 </span>
                             </span>
                         </div>
-                        <div class="col-10 marquee bg ms-2 p-2 pb-0">
+                        <div class="col-xl-10 col-lg-9 col-8 marquee bg ms-lg-2 ms-3 p-2 pb-0">
                             <span class="m-auto small text-light" id="para1">
                                 ⌘ Specialised and Customised HTML and CSS Themes. ⌘ Specialised and Customised WordPress
                                 Themes. ⌘ Specialised and Customised Landing Pages.
@@ -204,7 +232,7 @@
                                 Websites.
                             </span>
                         </div>
-                        <div class="col-1 ms-2 bg" style="width: min-content;">
+                        <div class="col-xl-1 col-auto ms-lg-2 ms-3 bg" style="width: min-content;">
                             <div class="slider-btn d-flex align-items-center gap-2 p-2">
                                 <div class="button-prev slick-disabled">
                                     <i class="bi bi-chevron-left bg-1 p-0 pb-1 text-light"></i>
@@ -214,7 +242,6 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12"></div>
                     </div>
                     <div class="col-12 projects-list bg p-2 mt-2 pb-4">
                         <div class="project-item bg-1 m-1">
@@ -367,6 +394,448 @@
                                         </span>
                                     </span>
                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-3 d-flex flex-column p-4 mt-3  overflow-hidden">
+                    <div class="col-12 d-flex bg p-3 pe-3 mb-1">
+                        <div class="col-3 bg hover-effect">
+                            <span>
+                                <span class="normal">
+                                    Education/Training
+                                    <i class="bi bi-arrow-up-right"></i>
+                                </span>
+                                <span class="hover">Education/Training
+                                    <i class="bi bi-arrow-up-right"></i>
+                                </span>
+                            </span>
+                        </div>
+                        <div class="col-xl-10 col-9 marquee bg ms-2 p-2 pb-0">
+                            <span class="m-auto small text-light" id="para1">
+                                ⌘ I am currently pursuing a Bachelor's degree in Computer Science Engineering with a
+                                specialization in Artificial Intelligence and Machine Learning (CSE-AIML).
+                            </span>
+                            <span class="m-auto small text-light" id="para2">
+                                ⌘ I finished a Diploma in Computer Engineering in 2022.
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-12 timeline bg p-2 mt-2 py-0">
+                        <div class="content">
+                            <p>
+                                <span class="main-txt bg-1 d-block px-5 py-4">
+                                    <small class="year-txt">2022-2025</small>
+                                    <br /><span class="h3 d-inline text-light">BTech : CSE-AIML</span>
+                                    <br /><small>
+                                        Currently Enrolled In 3 Year Graduation Program to attain a Bachelor's Degree in
+                                        Computer Science Engineering - Artificial Intelligence and Machine Learning
+                                    </small>
+                                </span>
+                            </p>
+                            <p>
+                                <span class="main-txt bg-1 d-block px-5 py-4">
+                                    <small class="year-txt">Feb 2022 - Aug 2022</small>
+                                    <br /><span class="h3 d-inline text-light">Web Dev Training/Internship</span>
+                                    <br /><small>
+                                        During his internship he has been exposed to various activities of
+                                        software development, Frontend techniques and tools of programming.
+                                    </small>
+                                </span>
+                            </p>
+                            <p>
+                                <span class="main-txt bg-1 d-block px-5 py-4">
+                                    <small class="year-txt">2019-2022</small>
+                                    <br /><span class="h3 d-inline text-light">Diploma in Computer Engineering</span>
+                                    <br /><small>
+                                        I passed the 3 years full time Diploma Course Examination in
+                                        Computer Engineering conducted by the 'BOARD Of Technical Education,
+                                        Delhi' in the year 2022 and was placed in 1st Division with distinction
+                                    </small>
+                                </span>
+                            </p>
+                            <p>
+                                <span class="main-txt bg-1 d-block px-5 py-4">
+                                    <small class="year-txt">2018-2019</small>
+                                    <br /><span class="h3 d-inline text-light">Matriculation</span>
+                                    <br /><small>
+                                        I finished my higher secondary education in 2019 while scoring 83% aggregate
+                                        from DDPS, school in Delhi-NCR, UP.
+                                    </small>
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-4 d-flex flex-column p-4 mt-3  overflow-hidden">
+                    <div class="col-12 d-flex bg p-3 pe-3 mb-4">
+                        <div class="col-xl-1 col-2 bg hover-effect">
+                            <span>
+                                <span class="normal">
+                                    Services
+                                    <i class="bi bi-arrow-up-right"></i>
+                                </span>
+                                <span class="hover">Services
+                                    <i class="bi bi-arrow-up-right"></i>
+                                </span>
+                            </span>
+                        </div>
+                        <div class="col-xl-11 col-10 marquee bg ms-2 p-2 pb-0">
+                            <span class="m-auto small text-light" id="para1">
+                                ⌘ Specialised and Customised HTML and CSS Themes. ⌘ Specialised and Customised WordPress
+                                Themes. ⌘ Specialised and Customised Landing Pages.
+                            </span>
+                            <span class="m-auto small text-light" id="para2">
+                                ⌘ Specialised and Customised CMS Websites. ⌘ Specialised and Customised Shopify
+                                Websites.
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-12 d-flex flex-wrap card-stacks p-0">
+                        <div class="box-wrapper p-2 col-6">
+                            <div class="col-12 d-flex box">
+                                <div class="col-10">
+                                    <h3>
+                                        Website Design
+                                    </h3>
+                                    <p class="small">
+                                        I create Figma Design with unique ideas and custom requirement.
+                                    </p>
+                                    <small class="text-decoration-underline">
+                                        5 PROJECTS
+                                    </small>
+                                </div>
+                                <div class="col-1">
+                                    <i class="bi bi-brush"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box-wrapper p-2 col-6">
+                            <div class="col-12 d-flex box">
+                                <div class="col-10">
+                                    <h3>
+                                        Website Development
+                                    </h3>
+                                    <p class="small">
+                                        I develop Web Design to live Websites using latest Tech-Stack.
+                                    </p>
+                                    <small class="text-decoration-underline">
+                                        5 PROJECTS
+                                    </small>
+                                </div>
+                                <div class="col-1">
+                                    <i class="bi bi-code-slash"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box-wrapper p-2 col-6">
+                            <div class="col-12 d-flex box">
+                                <div class="col-10">
+                                    <h3>
+                                        CMS Development
+                                    </h3>
+                                    <p class="small">
+                                        I create CMS Websites like WordPress using Elementor/WPbakery.
+                                    </p>
+                                    <small class="text-decoration-underline">
+                                        5 PROJECTS
+                                    </small>
+                                </div>
+                                <div class="col-1">
+                                    <i class="bi bi-wordpress"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box-wrapper p-2 col-6">
+                            <div class="col-12 d-flex box">
+                                <div class="col-10">
+                                    <h3>
+                                        SEO/Marketing
+                                    </h3>
+                                    <p class="small">
+                                        I optimise Website and help in increase ranking and reach.
+                                    </p>
+                                    <small class="text-decoration-underline">
+                                        5 PROJECTS
+                                    </small>
+                                </div>
+                                <div class="col-1">
+                                    <i class="bi bi-graph-up-arrow"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box-wrapper p-2 col-6">
+                            <div class="col-12 d-flex box">
+                                <div class="col-10">
+                                    <h3>
+                                        Logo Design
+                                    </h3>
+                                    <p class="small">
+                                        I create creative logo with unique ideas and brand meaning.
+                                    </p>
+                                    <small class="text-decoration-underline">
+                                        5 PROJECTS
+                                    </small>
+                                </div>
+                                <div class="col-1">
+                                    <i class="bi bi-bounding-box-circles"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box-wrapper p-2 col-6">
+                            <div class="col-12 d-flex box">
+                                <div class="col-10">
+                                    <h3>
+                                        Branding Consult
+                                    </h3>
+                                    <p class="small">
+                                        I consult regarding branding and marketing using digital tools.
+                                    </p>
+                                    <small class="text-decoration-underline">
+                                        5 PROJECTS
+                                    </small>
+                                </div>
+                                <div class="col-1">
+                                    <i class="bi bi-stars"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-5 d-flex flex-column p-4 mt-3  overflow-hidden">
+                    <div class="col-12 d-flex bg p-3 pe-3 mb-4">
+                        <div class="col-1 bg hover-effect">
+                            <span>
+                                <span class="normal">
+                                    Stack
+                                    <i class="bi bi-arrow-up-right"></i>
+                                </span>
+                                <span class="hover">Stack
+                                    <i class="bi bi-arrow-up-right"></i>
+                                </span>
+                            </span>
+                        </div>
+                        <div class="col-11 marquee bg ms-2 p-2 pb-0">
+                            <span class="m-auto small text-light" id="para1">
+                                ⌘ HTML and CSS ⌘ WordPress ⌘ JavaScript ⌘ Python ⌘ WebFlow ⌘ Shopify ⌘ PHP
+                            </span>
+                            <span class="m-auto small text-light" id="para2">
+                                ⌘ Photoshop ⌘ Bootstrap ⌘ Tailwind ⌘ Jquery ⌘ Figma
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-12 d-flex flex-wrap card-stacks p-0">
+                        <div class="box-wrapper p-2 col-4">
+                            <div class="col-12 d-flex box">
+                                <div class="col-12 p-0 text-center">
+                                    <h3>
+                                        HTML/CSS
+                                    </h3>
+                                    <p class="small mb-0">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-half"></i>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box-wrapper p-2 col-4">
+                            <div class="col-12 d-flex box">
+                                <div class="col-12 p-0 text-center">
+                                    <h3>
+                                        JavaScript/JQuery
+                                    </h3>
+                                    <p class="small mb-0">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-half"></i>
+                                        <i class="bi bi-star"></i>
+                                        <i class="bi bi-star"></i>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box-wrapper p-2 col-4">
+                            <div class="col-12 d-flex box">
+                                <div class="col-12 p-0 text-center">
+                                    <h3>
+                                        Bootstrap/Tailwind
+                                    </h3>
+                                    <p class="small mb-0">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-half"></i>
+                                        <i class="bi bi-star"></i>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box-wrapper p-2 col-4">
+                            <div class="col-12 d-flex box">
+                                <div class="col-12 p-0 text-center">
+                                    <h3>
+                                        Python
+                                    </h3>
+                                    <p class="small mb-0">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-half"></i>
+                                        <i class="bi bi-star"></i>
+                                        <i class="bi bi-star"></i>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box-wrapper p-2 col-4">
+                            <div class="col-12 d-flex box">
+                                <div class="col-12 p-0 text-center">
+                                    <h3>
+                                        C++/PHP
+                                    </h3>
+                                    <p class="small mb-0">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-half"></i>
+                                        <i class="bi bi-star"></i>
+                                        <i class="bi bi-star"></i>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box-wrapper p-2 col-4">
+                            <div class="col-12 d-flex box">
+                                <div class="col-12 p-0 text-center">
+                                    <h3>
+                                        WordPress
+                                    </h3>
+                                    <p class="small mb-0">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-half"></i>
+                                        <i class="bi bi-star"></i>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box-wrapper p-2 col-4">
+                            <div class="col-12 d-flex box">
+                                <div class="col-12 p-0 text-center">
+                                    <h3>
+                                        WebFlow/Shopify
+                                    </h3>
+                                    <p class="small mb-0">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-half"></i>
+                                        <i class="bi bi-star"></i>
+                                        <i class="bi bi-star"></i>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box-wrapper p-2 col-4">
+                            <div class="col-12 d-flex box">
+                                <div class="col-12 p-0 text-center">
+                                    <h3>
+                                        Figma
+                                    </h3>
+                                    <p class="small mb-0">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-half"></i>
+                                        <i class="bi bi-star"></i>
+                                        <i class="bi bi-star"></i>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box-wrapper p-2 col-4">
+                            <div class="col-12 d-flex box">
+                                <div class="col-12 p-0 text-center">
+                                    <h3>
+                                        Photoshop
+                                    </h3>
+                                    <p class="small mb-0">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-half"></i>
+                                        <i class="bi bi-star"></i>
+                                        <i class="bi bi-star"></i>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-6 d-flex flex-column p-4 mt-3  overflow-hidden">
+                    <div class="col-12 d-flex bg p-3 pe-3 mb-4">
+                        <div class="col-xl-1 col-2 bg hover-effect">
+                            <span>
+                                <span class="normal">
+                                    Contact
+                                    <i class="bi bi-arrow-up-right"></i>
+                                </span>
+                                <span class="hover">Contact
+                                    <i class="bi bi-arrow-up-right"></i>
+                                </span>
+                            </span>
+                        </div>
+                        <div class="col-xl-11 col-10 marquee bg ms-2 p-2 pb-0">
+                            <span class="m-auto small text-light" id="para1">
+                                ⌘ Contact Me and lets discuss the requirement and feasibility of the project.
+                            </span>
+                            <span class="m-auto small text-light" id="para1">
+                                ⌘ Contact Me and lets discuss the ways to get more reach.
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-12 d-flex flex-wrap">
+                        <div class="col-lg-7 col-12 p-lg-2 mb-lg-0 mb-3">
+                            <div class="contact-form">
+                                <form action="" method="post">
+                                    <input type="text" name="fullName" placeholder="Name*" required> <br>
+                                    <input type="email" name="emailId" placeholder="Email*" required> <br>
+                                    <textarea cols="40" rows="10" name="message" id="message"
+                                        placeholder="Message"></textarea> <br>
+                                    <input type="submit" value="Submit" class="mb-0">
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-lg-5 col-12 p-lg-2">
+                            <div class="contact-info">
+                                <h4 class="sub-heading mb-3">
+                                    Address
+                                </h4>
+                                <ul>
+                                    <li>
+                                        <div class="icon">
+                                            <i class="bi bi-map"></i>
+                                        </div>
+                                        <div class="content ps-3 mb-3 mb-lg-0">
+                                            <h3>Visit Me</h3>
+                                            <p>19, Pari Vihar Lambakheda <br>Bhopal Madhya Pradesh</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="icon">
+                                            <i class="bi bi-telephone"></i>
+                                        </div>
+                                        <div class="content">
+                                            <h3>Contact Info</h3>
+                                            <p>
+                                                <a href="tel:+1284789900">+1 2847 89900,</a>
+                                            </p>
+                                            <p></p>
+
+                                            <p><a href="mailto:shuklapri2712@gmail.com">shuklapri2712@gmail.com.com</a>
+                                            </p>
+                                        </div>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>

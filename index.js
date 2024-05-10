@@ -4,26 +4,44 @@ const elementTime = document.getElementById('current_time');
 const elementYear = document.getElementById('current_year');
 var year = date.getFullYear();
 elementYear.innerHTML = year;
+const mediaQueryListObject = window.matchMedia('(min-width: 1200px)');
 
 function printTime() {
   date = new Date();
   var hours = date.getHours();
   var minutes = date.getMinutes();
   var seconds = date.getSeconds();
-
-  if (seconds < 10) {
-    seconds = '0' + seconds;
-  }
-  if (minutes < 10) {
-    minutes = '0' + minutes;
-  }
-  if (hours > 12) {
-    hours = hours - 12;
-    elementTime.innerHTML = hours + ' : ' + minutes + ' : ' + seconds + '  PM ';
-  } else if (hours < 12) {
-    elementTime.innerHTML = hours + ' : ' + minutes + ' : ' + seconds + '  AM ';
-  } else if ((hours = 12)) {
-    elementTime.innerHTML = hours + ' : ' + minutes + ' : ' + seconds + '  PM ';
+  mediaQueryListObject.addEventListener('change', () => {
+    if (minutes < 10) {
+      minutes = '0' + minutes;
+    }
+    if (hours > 12) {
+      hours = hours - 12;
+      elementTime.innerHTML = hours + ' : ' + minutes + '  PM ';
+    } else if (hours < 12) {
+      elementTime.innerHTML = hours + ' : ' + minutes + '  AM ';
+    } else if ((hours = 12)) {
+      elementTime.innerHTML = hours + ' : ' + minutes + '  PM ';
+    }
+  });
+  if (elementTime && mediaQueryListObject.matches) {
+    if (seconds < 10) {
+      seconds = '0' + seconds;
+    }
+    if (minutes < 10) {
+      minutes = '0' + minutes;
+    }
+    if (hours > 12) {
+      hours = hours - 12;
+      elementTime.innerHTML =
+        hours + ' : ' + minutes + ' : ' + seconds + '  PM ';
+    } else if (hours < 12) {
+      elementTime.innerHTML =
+        hours + ' : ' + minutes + ' : ' + seconds + '  AM ';
+    } else if ((hours = 12)) {
+      elementTime.innerHTML =
+        hours + ' : ' + minutes + ' : ' + seconds + '  PM ';
+    }
   }
 }
 
