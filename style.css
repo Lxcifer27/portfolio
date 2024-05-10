@@ -752,6 +752,11 @@ body {
     padding: 40px;
   }
 }
+@media (min-width: 768px) {
+  .section-2 .marquee.col-lg-9 {
+    width: calc(83.33333333% - 110px);
+  }
+}
 @media (min-width: 992px) {
   .sidebar {
     position: fixed;
