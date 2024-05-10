@@ -47,7 +47,7 @@ function printTime() {
 
 setInterval(function () {
   printTime();
-}, 1000);
+}, 500);
 
 // section-1 date
 const elementDate = document.getElementById('current_date');
@@ -107,6 +107,15 @@ $(document).ready(function () {
     infinite: false,
     autoplay: false,
     rows: 2,
+    responsive: [
+      {
+        breakpoint: 576,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   });
   $('.button-prev').click(function () {
     $('.projects-list').slick('slickPrev');
@@ -119,4 +128,9 @@ $(document).ready(function () {
     $('.button-prev').removeClass('slick-disabled');
     $('.button-next').addClass('slick-disabled');
   });
+});
+
+$('.btn1').click(function () {
+  $(this).toggleClass('open');
+  $('.sidebar-nav').toggleClass('d-none');
 });
