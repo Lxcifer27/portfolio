@@ -883,6 +883,9 @@ body {
   .content .small small {
     font-size: 13px;
   }
+  .section-2 .marquee.col-lg-9 {
+    width: calc(83.33333333% - 10px);
+  }
 }
 @media (min-width: 1600px) {
   .section-1 .avatar-img img {
